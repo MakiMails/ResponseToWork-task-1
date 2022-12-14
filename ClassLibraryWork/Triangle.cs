@@ -15,7 +15,7 @@
 
         public bool IsTriangleRectangular()
         {
-            return _sideC > _sideA && _sideC > _sideB;
+            return (_sideC * _sideC) == (_sideA * _sideA) + (_sideB * _sideB);
         }
 
         public override double GetSquare()
